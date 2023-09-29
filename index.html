@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <title>COVID-19</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { 
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+        
+        }
+        </style>
+</head>
+<body>
+    <div id="map"></div>
+</body>
+<script>
+	mapboxgl.accessToken = "pk.eyJ1IjoiaGFycnlrYW1ibGUiLCJhIjoiY2xsaGxjd2UwMWJvdTNlbjFlZ3dybTFlNyJ9.dKdAoSDUcZohOSEFGtUrIw";
+const naksha = new mapboxgl.Map({
+container: 'map', // container ID
+// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+style: 'mapbox://styles/mapbox/streets-v12', // style URL
+center: [20.5937, 78.9629], // starting position [lng, lat]
+zoom: 3 // starting zoom
+});
+
+</script>
+ 
+<script src="index.js"></script>
+</html>
